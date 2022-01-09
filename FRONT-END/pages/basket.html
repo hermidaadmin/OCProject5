@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/xsmall.css" media="(max-width:575.98px)" />
+  <link rel="stylesheet" href="../css/small.css" media="(min-width: 576px) and (max-width:767.98px)" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta name="description" content="Orinoco Website" />
+  <title>Basket Details</title>
+</head>
+
+
+<body>
+  <header>
+    <img class="logo" src="../images/logo-orinoco.png" alt="logoorinoco" />
+    <nav>
+      <a href="pages/basket.html" id="quantitybasket"> Basket<i class="fas fa-shopping-cart"></i></a>
+      <a href="../index.html"> Home <i class="fas fa-store"></i></a>
+    </nav>
+  </header>
+
+  <div class="image-background">
+    <img src="../images/background.jpeg" alt="image-background" />
+    <div class="text-background">
+      <h1> Orinoco Ecommerce </h1>
+      
+    </div>
+  </div>
+
+  <section class="recap-commande">
+    <table id="container">
+
+      <thead>
+        <tr>
+          <th class="srcimage">Photos</th>
+          <th>Name</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Delete</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>TOTAL</td>
+        <td id="prixTotal"></td>
+      </tr>
+      </tfoot>
+      
+    </table>
+
+    <button id="viderbasket" class="viderbasket">Empty the Basket</button>
+  </section>
+
+  <form action="#" method="POST" id="form">
+    <div>
+      <input type="radio" id="Mr" name="drone" value="Mr" checked>
+      <label for="Mr">Mr</label>
+
+      <input type="radio" id="Mrs" name="drone" value="Mrs">
+      <label for="Mrs">Mrs</label>
+    </div>
+
+    <div>
+      <label for="Name">Last Name *:</label><br />
+      <input type="text" id="LName" name="LName" required="required" placeholder="Hermida" />
+    </div>
+
+    <div>
+      <label for="firstname">First Name *:</label><br />
+      <input type="text" id="firstname" name="firstname" required="required" placeholder="Joseph" />
+    </div>
+
+    <div>
+      <label for="address">Adress *:</label><br />
+      <input type="text" id="address" name="address" required="required" placeholder="Broken Feather" />
+    </div>
+
+    <div>
+      <label for="city">City *:</label><br />
+      <input type="text" id="city" name="text" required="required" placeholder=" Austin "
+        pattern="^[a-zA-Z]{1}[a-zA-Z'À-ÿ -]+$" />
+    </div>
+
+    <div>
+      <label for="email">E-mail *:</label><br />
+      <input type="email" id="email" name="email" required="required" placeholder="hermidaja@outlook.com"
+        pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" />
+    </div>
+
+    <input type="submit" value="SUBMIT" id="envoiFormulaire" />
+
+    <p>* Mandatory Fields</p>
+  </form>
+
+  <footer>
+    <ul>
+      <li><a href="#"> About</a></li>
+      <li><a href="#"> Privacy</a></li>
+      <li><a href="#">Terms of use</a></li>
+    </ul>
+  </footer>
+  <script src="../js/camera.js"></script>
+  <script src="../js/basket.js"></script>
+</body>
+
+</html>
